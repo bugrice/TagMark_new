@@ -19,25 +19,7 @@ window.addEventListener("click", function (event) {
   }
 });
 
-var btn = document.querySelector(".btnT1");
 
-var modal = document.querySelector(".modal");
-
-var span = document.querySelector(".close");
-
-btn.addEventListener("click", function () {
-  modal.style.display = "block";
-});
-
-span.addEventListener("click", function () {
-  modal.style.display = "none";
-});
-
-window.addEventListener("click", function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-});
 
 
 
@@ -91,3 +73,49 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
 
+/*입력 텍스트*/
+document.addEventListener("DOMContentLoaded", (e) => {
+  const inputText = document.getElementById("inputText");
+  const savedText = document.getElementById("savedText");
+
+  inputText.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      const text = inputText.value;
+      savedText.textContent = text;
+      inputText.value = "";
+    }
+    
+  });
+});
+
+
+
+/*북마크 텍스트 추가*/
+let rightBoxes = document.querySelectorAll(".right-box");
+
+rightBoxes.forEach(function(rightBox) {
+  let editIcon = rightBox.querySelector(".xi-pen");
+  let deleteIcon = rightBox.querySelector(".xi-trash");
+  let textElement = rightBox.querySelector(".text");
+
+  editIcon.addEventListener("click", function() {
+    let userInput = prompt("추가할 URL을 입력해주세요");
+
+    if (userInput !== null) {
+      if (textElement === null) {
+        textElement = document.createElement("div");
+        textElement.className = "text";
+        rightBox.insertBefore(textElement, editIcon.nextSibling);
+      }
+
+      textElement.innerText = userInput;
+    }
+  });
+
+  deleteIcon.addEventListener("click", function() {
+    if (textElement !== null) {
+      textElement.innerText = "";
+    }
+  });
+});

@@ -219,3 +219,28 @@ input:focus::placeholder {
     border: 2px solid rgb(255, 198, 91);
     border-radius: 5px;
 }
+
+/*텍스트 입력 삽입*/
+#inputText {
+    width: 135%;
+    height: 15px;
+    resize: none;
+    margin-bottom: 10px;
+    background-color: rgb(255, 198, 91);
+    border: 2px solid rgb(255, 198, 91);
+    border-radius: 5px;
+    color: white;
+    font-size: 1vw;
+    font-weight: bold;
+  }
+  
+  
+  #output {
+    margin-top: 20px;
+  }
+
+  .text {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 120px;
+}
