@@ -1,0 +1,221 @@
+/*<link rel="stylesheet" type="text/css" href="style.css">*/
+.left-box {
+    width: 20%;
+    height: 100vw;
+    background-color: white;
+    border: 3px solid grey;
+    border-radius: 5px;
+    float: left;
+    /* 왼쪽에 배치 */
+    margin-right: 10px;
+    /* 오른쪽에 10px 여백 추가 */
+    position: relative;
+    /* 이미지를 위치시키기 위해 relative 포지션 설정 */
+}
+
+.right-box-container {
+    float: right;
+    /* 오른쪽에 배치 */
+    width: 92%;
+}
+
+.right-box {
+    width: 77%;
+    height: 170px;
+    background-color: white;
+    border: 3px solid grey;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* 아래쪽에 10px 여백 추가 */
+    float: right;
+    /* 오른쪽에 배치 */
+    position: relative;
+    /*아이콘 위치 설정*/
+}
+
+.image-logo {
+    float: left;
+    width: 5vw;
+    height: 5vw;
+    padding-top: 5vw;
+    /* 이미지 위에 100px 여백 추가 */
+    padding-left: 1vw;
+    /* 이미지 오른쪽에 10px 여백 추가 */
+}
+
+.mwLG {
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+#right-link {
+    left: 10px;
+    top: 100px;
+    padding-left: 30px;
+}
+
+.search-input {
+    font-size: 16px;
+    width: 100%;
+    height: 37px;
+    border-radius: 50px;
+    border: 2px solid grey;
+    background-color: rgb(214, 214, 214);
+    padding: 5px;
+    margin-top: auto; /* 외부여백 위에 10px 추가 */
+}
+
+.search-box {
+    position: absolute; /* left-box 내부에서 위치 지정 */
+    width: 80%;
+    top: 60px;
+    left: 30px;
+}
+
+.toptag {
+    font-size: 20px;
+    color: rgb(43, 43, 252);
+    position: absolute; /* left-box 내부에서 위치 지정 */
+    top: 100px;
+    left: 20px;
+}
+
+.inputtag {
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    position: absolute; /* left-box 내부에서 위치 지정 */
+    top: auto;
+    left: auto;
+}
+
+input:focus::placeholder {
+    visibility: hidden;
+}
+
+.xi-ellipsis-h {
+    font-size: 20px;
+    color: grey;
+    position: absolute; /* left-box 내부에서 위치 지정 */
+    /* 위치 조정 */
+    left: 14vw;
+    top: 20px;
+}
+
+.right-box-i {
+    font-size: 20px;
+    color: grey;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.right-box-view-i {
+    font-size: 30px;
+    color: grey;
+    float: right;
+    right: 0;
+    bottom: 0;
+}
+
+/*버튼 투명화 */
+.btnT {
+    background-color: transparent;
+    border: none;
+}
+
+.btnT1 {
+    background-color: transparent;
+    border: none;
+}
+
+/*텍스트 수정*/
+.editable-container {
+    position: relative;
+    display: inline-block;
+}
+
+/*텍스트 수정*/
+.edit-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /*처음 모달창 숨김*/
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /*배경 투명도*/
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border: 3px solid grey;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*모달창 태그텍스트*/
+#id {
+    font-size: 1vw;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+}
+
+#profile {
+    font-size: 1vw;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+}
+
+#profile2 {
+    font-size: 1vw;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+}
+
+#profile_info {
+    font-size: 1vw;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+}
+
+#mybtn {
+    background-color: rgb(255, 198, 91);
+    color: white;
+    font-size: 1vw;
+    border: 2px solid rgb(255, 198, 91);
+    border-radius: 5px;
+}
