@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   const inputText = document.getElementById("inputText");
   const savedText = document.getElementById("savedText");
   const clearButton = document.getElementById("btnT3");
-
+  const modal1 = document.getElementById("Modal1");
 
   inputText.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
@@ -114,7 +114,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
   clearButton.addEventListener("click", () => {
     inputText.value = "";
     savedText.textContent = "";
+    const modal1 = confirm("삭제하시겠습니까?");
   });
+
 });
 
 
