@@ -133,6 +133,11 @@ input:focus::placeholder {
     border: none;
 }
 
+#btnT3 {
+    background-color: transparent;
+    border: none;
+}
+
 /*텍스트 수정*/
 .editable-container {
     position: relative;
@@ -180,6 +185,19 @@ input:focus::placeholder {
 
     border: 1px solid #888;
     width: 30%;
+    border: 3px solid grey;
+    border-radius: 5px;
+}
+
+.modal-content1 {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    border: 1px solid #888;
+    width: 15%;
     border: 3px solid grey;
     border-radius: 5px;
 }

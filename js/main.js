@@ -99,6 +99,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
 document.addEventListener("DOMContentLoaded", (e) => {
   const inputText = document.getElementById("inputText");
   const savedText = document.getElementById("savedText");
+  const clearButton = document.getElementById("btnT3");
+
 
   inputText.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
@@ -107,7 +109,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
       savedText.textContent = text;
       inputText.value = "";
     }
-    
+  });
+
+  clearButton.addEventListener("click", () => {
+    inputText.value = "";
+    savedText.textContent = "";
   });
 });
 
