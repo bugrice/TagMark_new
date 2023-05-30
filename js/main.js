@@ -1,7 +1,7 @@
-/*모달창 */
+/*모달창1 */
 var btn = document.querySelector(".btnT");
 
-var modal = document.querySelector(".modal");
+var modal = document.querySelector(".modal1");
 
 var span = document.querySelector(".close");
 
@@ -19,6 +19,28 @@ window.addEventListener("click", function (event) {
   }
 });
 
+/*모달창2 */
+
+var btn1 = document.querySelector(".btnT1");
+
+var modal1 = document.querySelector(".modal");
+
+var span1 = document.querySelector(".close1");
+
+btn1.addEventListener("click", function () {
+  modal1.style.display = "block";
+  modal.style.display = "none";
+});
+
+span1.addEventListener("click", function () {
+  modal1.style.display = "none";
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+});
 
 
 
@@ -115,7 +137,29 @@ rightBoxes.forEach(function(rightBox) {
 
   deleteIcon.addEventListener("click", function() {
     if (textElement !== null) {
-      textElement.innerText = "";
+      let confirmation = confirm("삭제하시겠습니까?");
+      if (confirmation) {
+        textElement.innerText = "";
+      }
+      
     }
+  });
+});
+
+/*TOP버튼*/
+window.addEventListener('scroll', function() {
+  var topButton = document.getElementById('topButton');
+
+  if (window.pageYOffset > 300) {
+      topButton.style.display = 'block';
+  } else {
+      topButton.style.display = 'none';
+  }
+});
+topButton.addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
   });
 });
