@@ -147,6 +147,13 @@ rightBoxes.forEach(function(rightBox) {
     if (textElement !== null) {
       let confirmation = confirm("삭제하시겠습니까?");
       if (confirmation) {
+        var elements = document.getElementsByClassName('right-box');
+        while (elements.length > 0) {
+          elements[0].parentNode.removeChild(elements[0]);
+        }
+      }
+      else
+      {
         textElement.innerText = "";
       }
       
