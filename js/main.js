@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   icn.addEventListener("mouseover", (e) => {
     e.target.setAttribute("class", "xi-pen");
-});
+  });
 
   icn.addEventListener("mouseout", (e) => {
     e.target.setAttribute("class", "xi-pen-o");
@@ -170,4 +170,63 @@ topButton.addEventListener('click', function(e) {
       top: 0,
       behavior: 'smooth'
   });
+});
+
+
+// 아이콘 클릭 시 view 모드 변경
+document.addEventListener("DOMContentLoaded", (e) => {
+  const chmod2 = document.getElementById("app");
+  const boxes2 = document.querySelectorAll(".right-box");
+
+  boxes2.forEach(function(box2) {
+    chmod2.addEventListener("click", function() {
+      box2.classList.toggle("right-box1");
+    });
+  });
+
+  // +버튼 눌렀을때 right-box생성
+  const container = document.getElementById("container");
+  const addButton = document.getElementById("bookmarkplus");
+
+  addButton.addEventListener("click", function() {
+    const newBox = document.createElement("div");
+    newBox.classList.add("right-box");
+    newBox.innerHTML = `
+      <div class="text"></div>
+      <div class="right-box-i">
+        <i class="xi-pen">&nbsp;</i>
+        <i class="xi-trash">&nbsp;</i>
+      </div>
+    `;
+    container.appendChild(newBox);
+
+    const addedRightBox = container.querySelector(".right-box");
+
+    // addedRightBox를 사용하여 작업 처리
+    const chmod1 = document.getElementById("app");
+    chmod1.addEventListener("click", function(){
+      addedRightBox.classList.toggle("right-box1"); // 클래스명 변경
+    });
+    
+
+  });
+
+});
+
+//search창
+const searchEl = document.querySelector('.search');
+const searchInputEl = searchEl.querySelector('input');
+// 검색창 요소를 클릭하면 실행.
+searchEl.addEventListener('click', function () {
+  searchInputEl.focus();
+});
+// 검색창 요소 내부 실제 input 요소에 포커스되면 실행.
+searchInputEl.addEventListener('focus', function () {
+  searchEl.classList.add('focused');
+  searchInputEl.setAttribute('placeholder', '통합검색');
+});
+// 검색창 요소 내부 실제 input 요소에서 포커스가 해제(블러)되면 실행.
+searchInputEl.addEventListener('blur', function () {
+  searchEl.classList.remove('focused');
+  searchInputEl.setAttribute('placeholder', '');
 });

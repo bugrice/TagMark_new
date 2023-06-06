@@ -1,309 +1,392 @@
 /*<link rel="stylesheet" type="text/css" href="style.css">*/
 .left-box {
-    width: 20%;
-    height: 100vw;
-    background-color: white;
-    border: 3px solid grey;
-    border-radius: 5px;
-    float: left;
-    /* 왼쪽에 배치 */
-    margin-right: 10px;
-    /* 오른쪽에 10px 여백 추가 */
-    position: relative;
-    /* 이미지를 위치시키기 위해 relative 포지션 설정 */
+  width: 20%;
+  height: 100vw;
+  background-color: white;
+  border: 3px solid grey;
+  border-radius: 5px;
+  float: left;
+  /* 왼쪽에 배치 */
+  margin-right: 10px;
+  /* 오른쪽에 10px 여백 추가 */
+  position: relative;
+  /* 이미지를 위치시키기 위해 relative 포지션 설정 */
 }
 
 .right-box-container {
-    float: right;
-    /* 오른쪽에 배치 */
-    width: 92%;
+  float: right;
+  /* 오른쪽에 배치 */
+  width: 92%;
 }
 
 .right-box {
-    width: 77%;
-    height: 170px;
-    background-color: white;
-    border: 3px solid grey;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    /* 아래쪽에 10px 여백 추가 */
-    float: right;
-    /* 오른쪽에 배치 */
-    position: relative;
-    /*아이콘 위치 설정*/
+  width: 64vw;
+  height: 10vw;
+  background-color: white;
+  border: 3px solid grey;
+  border-radius: 5px;
+  margin-top: 0;
+  margin-bottom: 0.5vw;
+  float: left;
+  position: relative;
 }
 
-.image-logo {
-    float: left;
-    width: 5vw;
-    height: 5vw;
-    padding-top: 5vw;
-    /* 이미지 위에 100px 여백 추가 */
-    padding-left: 1vw;
-    /* 이미지 오른쪽에 10px 여백 추가 */
-}
+.right-box1 {
+  width: 18vw;
+  height: 13vw;
+  background-color: white;
+  border: 3px solid grey;
+  border-radius: 5px;
+  margin-right: 2vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  
+  float: left;
 
-.mwLG {
-    float: left;
-    width: 100px;
-    height: 100px;
-    padding-top: 30px;
-    padding-left: 20px;
-}
+  position: relative;
 
-#right-link {
-    left: 10px;
-    top: 100px;
-    padding-left: 30px;
-}
-
-.search-input {
-    font-size: 16px;
-    width: 100%;
-    height: 37px;
-    border-radius: 50px;
-    border: 2px solid grey;
-    background-color: rgb(214, 214, 214);
-    padding: 5px;
-    margin-top: auto; /* 외부여백 위에 10px 추가 */
-}
-
-.search-box {
-    position: absolute; /* left-box 내부에서 위치 지정 */
-    width: 80%;
-    top: 60px;
-    left: 30px;
-}
-
-.toptag {
-    font-size: 20px;
-    color: rgb(43, 43, 252);
-    position: absolute; /* left-box 내부에서 위치 지정 */
-    top: 100px;
-    left: 20px;
-}
-
-.inputtag {
-    font-size: 15px;
-    font-weight: bold;
-    color: grey;
-    position: absolute; /* left-box 내부에서 위치 지정 */
-    top: auto;
-    left: auto;
-}
-
-input:focus::placeholder {
-    visibility: hidden;
-}
-
-.xi-ellipsis-h {
-    font-size: 20px;
-    color: grey;
-    position: absolute; /* left-box 내부에서 위치 지정 */
-    /* 위치 조정 */
-    left: 14vw;
-    top: 20px;
 }
 
 .right-box-i {
-    font-size: 20px;
-    color: grey;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  font-size: 1.3vw;
+  color: grey;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .right-box-view-i {
-    font-size: 30px;
-    color: grey;
-    float: right;
-    right: 0;
-    bottom: 0;
+  font-size: 2vw;
+  color: grey;
+  right: 0;
+  bottom: 0;
+}
+
+
+#app:hover{
+  font-size: 2.2vw;
+  color: #555555;
+}
+
+#view:hover{
+  font-size: 2.2vw;
+  color: #555555;
+}
+.image-logo {
+  float: left;
+  width: 5vw;
+  height: 5vw;
+  padding-top: 1vw;
+  /* 이미지 위에 100px 여백 추가 */
+  padding-left: 1vw;
+  /* 이미지 오른쪽에 10px 여백 추가 */
+}
+
+
+.toptag {
+  font-size: 1vw;
+  color: rgb(43, 43, 252);
+  position: absolute; /* left-box 내부에서 위치 지정 */
+  top: 3vw;
+  left: 1vw;
+}
+
+.inputtag {
+  font-size: 0.7vw;
+  font-weight: bold;
+  color: grey;
+  position: absolute; /* left-box 내부에서 위치 지정 */
+  top: auto;
+  left: auto;
+}
+
+input:focus::placeholder {
+  visibility: hidden;
+}
+
+.xi-ellipsis-h {
+  font-size: 1vw;
+  color: grey;
+  position: absolute; /* left-box 내부에서 위치 지정 */
+  /* 위치 조정 */
+  left: 14vw;
+  top: 1vw;
+}
+
+.xi-ellipsis-h:hover {
+  font-size: 1.2vw;
+  color: #555555;
 }
 
 /*버튼 투명화 */
 .btnT {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
 
 .btnT1 {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
 
 #btnT3 {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
 
 /*텍스트 수정*/
 .editable-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /*텍스트 수정*/
 .edit-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
 }
 
 .modal {
-    display: none; /*처음 모달창 숨김*/
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4); /*배경 투명도*/
+  display: none; /*처음 모달창 숨김*/
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /*배경 투명도*/
 }
 
 .modal1 {
-    display: none; /*처음 모달창 숨김*/
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4); /*배경 투명도*/
+  display: none; /*처음 모달창 숨김*/
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /*배경 투명도*/
 }
 
 .modal-content {
-    background-color: white;
-    margin: 15% auto;
-    padding: 20px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 
-    border: 1px solid #888;
-    width: 30%;
-    border: 3px solid grey;
-    border-radius: 5px;
+  border: 1px solid #888;
+  width: 30%;
+  border: 3px solid grey;
+  border-radius: 5px;
 }
 
 .modal-content1 {
-    background-color: white;
-    margin: 15% auto;
-    padding: 20px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 
-    border: 1px solid #888;
-    width: 15%;
-    border: 3px solid grey;
-    border-radius: 5px;
+  border: 0.1vw solid #888;
+  width: 15%;
+  border: 0.3vw solid grey;
+  border-radius: 5px;
 }
 
 
 
 
 .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaaaaa;
+  float: right;
+  font-size: 2.8vw;
+  font-weight: bold;
 }
 
 .close1 {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaaaaa;
+  float: right;
+  font-size: 2.8vw;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*모달창 태그텍스트*/
 #id {
-    font-size: 1vw;
-    font-size: 15px;
-    font-weight: bold;
-    color: grey;
+
+  font-size: 0.8vw;
+  font-weight: bold;
+  color: grey;
 }
 
 #profile {
-    font-size: 1vw;
-    font-size: 15px;
-    font-weight: bold;
-    color: grey;
+  font-size: 1vw;
+  font-weight: bold;
+  color: grey;
 }
 
 #profile2 {
-    font-size: 1vw;
-    font-size: 15px;
-    font-weight: bold;
-    color: grey;
+  font-size: 1vw;
+
+  font-weight: bold;
+  color: grey;
 }
 
 #profile_info {
-    font-size: 1vw;
-    font-size: 15px;
-    font-weight: bold;
-    color: grey;
+  font-size: 1vw;
+
+  font-weight: bold;
+  color: grey;
 }
 
 #mybtn {
-    background-color: rgb(255, 198, 91);
-    color: white;
-    font-size: 1vw;
-    border: 2px solid rgb(255, 198, 91);
-    border-radius: 5px;
+  background-color: rgb(255, 198, 91);
+  color: white;
+  font-size: 1vw;
+  border: 2px solid rgb(255, 198, 91);
+  border-radius: 5px;
 }
 
 /*텍스트 입력 삽입*/
 #inputText {
-    width: 135%;
-    height: 15px;
-    resize: none;
-    margin-bottom: 10px;
-    background-color: rgb(255, 198, 91);
-    border: 2px solid rgb(255, 198, 91);
-    border-radius: 5px;
-    color: white;
-    font-size: 1vw;
-    font-weight: bold;
-  }
-  
-  
-  #output {
-    margin-top: 20px;
-  }
+  width: 25vw;
+  height: 1vw;
+  resize: none;
+  margin-bottom: 1vw;
+  background-color: rgb(255, 198, 91);
+  border: 2px solid rgb(255, 198, 91);
+  border-radius: 5px;
+  color: white;
+  font-size: 1vw;
+  font-weight: bold;
+}
 
-  .text {
-    font-size: 15px;
-    margin-top: 10px;
-    margin-left: 120px;
+.text {
+  font-size: 1vw;
+  margin-top: 1vw;
+  margin-left: 10vw;
 }
 
 /*TOP버튼*/
 #topButton {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(255, 198, 91, 0.555);
-    color: #fff;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 24px;
-    line-height: 50px;
-    z-index: 99;
+  display: none;
+  position: fixed;
+  bottom: 1vw;
+  right: 40vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: rgba(255, 198, 91, 0.555);
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 2vw;
+  line-height: 2.5vw;
+  z-index: 99;
 }
+
 #topButton:hover {
-    background-color: rgb(255, 198, 91);
+  background-color: rgb(255, 198, 91);
+  
 }
+
+#bookmarkplus {
+  display: block;
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  width: 5vw;
+  height: 5vw;
+  background-color: rgba(255, 198, 91, 0.555);
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 5vw;
+  line-height: 5vw;
+  z-index: 99;
+  border-width: 0;
+}
+
+#bookmarkplus:hover {
+  background-color: rgb(255, 198, 91);
+  
+}
+
+
+/*search창*/
+
+body .sub-menu .search {/*search창*/
+  position: relative;
+  height: 34px;
+}
+body .sub-menu .search input {  /*search창*/
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  color: #777;
+  font-size: 12px;
+  transition: width .4s;
+  background-color: rgb(214, 214, 214);
+  border-radius: 50px;
+}
+body .sub-menu .search input:focus {/*search창*/
+  width: 17vw;
+  border-color: rgb(255, 198, 91);
+}
+body .sub-menu .search .material-icons {/*search창*/
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  transition: .4s;
+}
+body .sub-menu .search.focused .material-icons {/*search창*/
+  opacity: 0;
+  display: none;
+}
+
+.notice .inner__left .notice-more .material-icons {/*몰라?*/
+  color: #fff;
+  font-size: 30px;
+}
+
+.notice .inner__left .notice-more .material-icons {/*몰라?*/
+  color: #fff;
+  font-size: 30px;
+}
+
+.notice .inner__right .toggle-promotion .material-icons {/*몰라?*/
+  font-size: 30px;
+}
+
+body .sub-menu {/*search창*/
+  position: absolute;
+  top: 1vw;
+  left: 0.5vw;
+  display: flex;
+}
+

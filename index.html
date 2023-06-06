@@ -5,79 +5,47 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="xeicon/xeicon.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+
 <body>
   <div>
     <img src="logo.png" alt="your-image" class="image-logo">
   </div>
   <div class="right-box-container">
+    
     <div class="left-box">
-      <div class="search-box">
-        <input type="search" class="search-input" placeholder="    🔍   Tag Search">
+
+      <div class="sub-menu">
+        <div class="search">
+          <input type="text" />
+          <span class="material-icons">search</span>
+        </div> 
       </div>
+      
+
+
+      
+      
       <div class="toptag">
         <p>
           <i class="xi-angle-up-min"></i> &nbsp;Categorie 1
           <button class="btnT"><i class="xi-ellipsis-h"></i></button>
         </p>
         <div class="inputtag">
-
-          <i class="xi-angle-up-min"></i>&nbsp;<span id="savedText"></span><!--받아올 텍스트 입력-->
-         
-
-        </div>
-      </div>
-
-      <div id="Modal1" class="modal1">
-        <div class="modal-content1">
-          <span class="close">&times;</span>
-          <div id="id">
-            <p>테그 수정<button class="btnT1"><i id="id" class="xi-pen"></i></button></p>
-            <p>테그 삭제<button id="btnT3"><i id="id" class="xi-trash"></i></button></p>
-          </div>
-          
-        </div>
-      </div>
-
-      <div id="Modal2" class="modal">
-        <div class="modal-content">
-          <span class="close1">&times;</span>
-          <p>
-          <p> &nbsp;카테고리 수정
-          <div class="editable-container">
-            <p contenteditable="true">수정해보세요</p>
-            <div id="profile">
-              <div id="profile_info">
-                <div id="id">
-                  <span>태그 편집</span><i id="xi-pen" class="xi-pen-o"></i>
-                </div><br />
-                <button id="mybtn"> 태그 편집</button>
-              </div>
-            </div>
-            <div id="profile2">
-              <p>
-                <span id="user_info">Tag1</span> <br /><br />
-                <span id="summary">Tag2</span>
-              </p>
-              <div><!--입력한 텍스트 삽입-->
-                <textarea id="inputText" placeholder="태그를 입력하고 Enter를 누르세요"></textarea>
-              </div>
-            </div>
-          </div>
-          </p>
-          </p>
+          <i class="xi-angle-up-min"></i>&nbsp;<span id="savedText"></span><!--받아올 텍스트 입력-->        
         </div>
       </div>
     </div>
+    
+    <div class="right-box-view-i">
+      <i class="xi-apps" id="app">&nbsp;</i>
+    </div>
+
     <div>
-      <br>
-      <div class="right-box-view-i">
-        <i class="xi-view-list"></i>
-        <i class="xi-apps">&nbsp;</i>
-      </div>
-      <br><br>
-
+      <div class="br"></div>
       <div class="right-box">
+        
         <div class="text"></div>
         <div class="right-box-i">
           <i class="xi-pen">&nbsp;</i>
@@ -120,9 +88,56 @@
           <i class="xi-trash">&nbsp;</i>
         </div>
       </div>
+      <div id="container"></div>
     </div>
   </div>
-  <a id="topButton" href="#top"> + </a>
+
+  <!-- 모달창1 -->
+  <div id="Modal1" class="modal1">
+    <div class="modal-content1">
+      <span class="close">&times;</span>
+      <div id="id">
+        <p>테그 수정<button class="btnT1"><i id="id" class="xi-pen"></i></button></p>
+        <p>테그 삭제<button id="btnT3"><i id="id" class="xi-trash"></i></button></p>
+      </div>    
+    </div>
+  </div>
+
+  <!-- 모달창2 -->
+  <div id="Modal2" class="modal">
+    <div class="modal-content">
+      <span class="close1">&times;</span>
+      <p>
+      <p> &nbsp;카테고리 수정
+      <div class="editable-container">
+        <p contenteditable="true">수정해보세요</p>
+        <div id="profile">
+          <div id="profile_info">
+            <div id="id">
+              <span>태그 편집</span><i id="xi-pen" class="xi-pen-o"></i>
+            </div><br />
+            <button id="mybtn"> 태그 편집</button>
+          </div>
+        </div>
+        <div id="profile2">
+          <p>
+            <span id="user_info">Tag1</span> <br /><br />
+            <span id="summary">Tag2</span>
+          </p>
+          <div><!--입력한 텍스트 삽입-->
+            <textarea id="inputText" placeholder="태그를 입력하고 Enter를 누르세요"></textarea>
+          </div>
+        </div>
+      </div>
+      </p>
+      </p>
+    </div>
+  </div>
+
+
+
+  <a id="topButton" href="#top"><i class="xi-arrow-up"></i></a>
+  <button id="bookmarkplus">+</button>
   <script src="js/main.js"></script>
 </body>
 </html>
